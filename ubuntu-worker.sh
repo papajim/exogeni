@@ -97,7 +97,9 @@ export VERSION=1.13.5 OS=linux ARCH=amd64 && \
 
 echo 'export GOPATH=${HOME}/go' >> ~/.bashrc
 echo 'export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin' >> ~/.bashrc
-source ~/.bashrc
+
+export GOPATH=${HOME}/go >> ~/.bashrc
+export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin >> ~/.bashrc
 
 export VERSION=3.6.1 && # adjust this as necessary \
     wget https://github.com/sylabs/singularity/releases/download/v${VERSION}/singularity-${VERSION}.tar.gz && \

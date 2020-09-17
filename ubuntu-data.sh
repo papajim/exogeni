@@ -36,7 +36,7 @@ make && make install
 ### SETUP PANORAMA USER ####
 ############################
 cd
-useradd -s /bin/bash -d /home/panorama -m -G docker panorama
+useradd -s /bin/bash -d /home/panorama -m panorama
 
 echo "panorama     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
