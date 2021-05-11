@@ -89,7 +89,7 @@ apt-get update && sudo apt-get install -y build-essential \
     git \
     cryptsetup-bin
 
-export VERSION=1.13.5 OS=linux ARCH=amd64 && \
+export VERSION=1.16.4 OS=linux ARCH=amd64 && \
     wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz && \
     sudo tar -C /usr/local -xzvf go$VERSION.$OS-$ARCH.tar.gz && \
     rm go$VERSION.$OS-$ARCH.tar.gz
@@ -101,8 +101,8 @@ echo 'export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin' >> ~/.bashrc
 export GOPATH=${HOME}/go >> ~/.bashrc
 export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin >> ~/.bashrc
 
-export VERSION=3.6.1 && # adjust this as necessary \
-    wget https://github.com/sylabs/singularity/releases/download/v${VERSION}/singularity-${VERSION}.tar.gz && \
+export VERSION=3.7.3 && # adjust this as necessary \
+    wget https://github.com/hpcng/singularity/releases/download/v${VERSION}/singularity-${VERSION}.tar.gz &&
     tar -xzf singularity-${VERSION}.tar.gz && \
     cd singularity
 
